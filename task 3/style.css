@@ -1,0 +1,369 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background: #F5F9FF;
+    overflow: hidden;
+    box-sizing: border-box;
+
+}
+
+.sidenav {
+    border-radius: 56.7663px 0 0 56.7663px;
+    height: 100%;
+    width: 6.5%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: #1F95EE;
+    overflow: hidden;
+}
+
+ul li ion-icon {
+    font-size: 1.4em;
+    color: #FFFFFF;
+}
+
+ul li {
+    margin-top: 6vh;
+}
+
+.sidenav ul {
+    display: flex;
+    position: relative;
+    height: 100%;
+    list-style: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidenav ul li:nth-child(2) {
+    padding: 20px auto;
+    font-size: 1.7em;
+}
+
+ul li:last-child {
+    position: absolute;
+    bottom: 10%;
+    border: 1.13533px solid rgba(255, 255, 255, 0.2);
+    box-sizing: border-box;
+    border-radius: 30%
+}
+
+a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    padding: 20px 0;
+    height: 100%;
+    width: 92.5%;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 8%;
+    box-sizing: border-box;
+    border-radius: 0 56.7663px 56.7663px 0;
+}
+
+.left {
+    width: 33%;
+    height: 100%;
+}
+
+.details-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 10%;
+}
+
+.details {
+    padding: 0px 55px;
+    background: #FFFFFF;
+    border-radius: 27.2478px;
+    height: 90%;
+}
+
+.emp-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.emp-details img {
+    width: 65px;
+    object-fit: fill;
+}
+.emp-details+p{
+    font-size: 12px;
+    padding: 12px 0 25px;
+
+}
+.line-graph{
+    padding-bottom: 15px;
+}
+
+.lg-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
+
+canvas {
+    width: 100%;
+    height: 100%;
+}
+
+.right {
+    width: 57%;
+    height: 100%;
+}
+
+.grid-header {
+    display: flex;
+    height: 8%;
+    align-items: center;
+
+}
+
+.grid-header ion-icon {
+    flex: 0.5;
+    font-size: 1.4em;
+}
+
+input[type="search"] {
+    border: none;
+    background: transparent;
+    margin: 0;
+    padding: 7px 8px;
+    font-size: 14px;
+    color: inherit;
+    border: 1px solid transparent;
+    border-radius: inherit;
+}
+
+input[type="search"]::placeholder {
+    color: #bbb;
+}
+
+input[type="search"]:focus {
+    border: 1px solid grey;
+    box-shadow: 0 0 3px 0 #1183d6;
+    border-color: #1183d6;
+    outline: none;
+}
+
+input.nosubmit {
+    flex: 3;
+    border: none;
+    padding: 9px 4px 9px 40px;
+    background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 13px center;
+}
+
+.boxes {
+    display: grid;
+    /* grid-template-columns: repeat(4 , 1fr); */
+    grid-template-rows: repeat(4, 1fr);
+    height: 92%;
+    gap: 23.75px 13px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.card:nth-of-type(3) {
+    grid-column: 3 / 5;
+}
+
+.card:nth-of-type(4) {
+    grid-column: 1 / 5;
+    grid-row: 2 /5;
+}
+
+.progress-header {
+    display: flex;
+    align-items: center;
+}
+
+.progress-details h2 {
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.bundle-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+
+}
+
+.bundle-details div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.bundle-details img {
+    width: 25px;
+
+}
+
+.card.calender {
+    display: grid;
+    width: 100%;
+    background-color: unset;
+    padding: unset;
+    height: 100%;
+    grid-template-columns: 10% 90%;
+    gap: 2px;
+}
+
+.cal {
+    background-color: white;
+    padding: 10px;
+}
+
+.cal:nth-child(1) {
+    border-top-left-radius: 20px;
+    padding-top: 90px;
+    grid-column: 1/2;
+    grid-row: 1/4;
+    writing-mode: vertical-rl;
+    transform: scale(1);
+}
+
+.cal:nth-child(2) {
+    border-top-right-radius: 20px;
+    grid-column: 2;
+    grid-row: 1/4;
+    padding: 10px 45px;
+}
+
+.cal:nth-child(3) {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    writing-mode: vertical-rl;
+    transform: scale(1);
+}
+
+.cal:nth-child(4) {
+    grid-row: 4/5;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cal:nth-child(5) {
+
+    border-bottom-left-radius: 20px;
+    grid-column: 1/2;
+    grid-row: 5/7;
+    writing-mode: vertical-rl;
+    transform: scale(1);
+}
+
+.cal:nth-child(6) {
+    border-bottom-right-radius: 20px;
+    grid-row: 5/7;
+}
+
+.dates {
+    display: flex;
+    padding-bottom: 15px;
+    justify-content: space-around;
+}
+
+.ym {
+    flex: 3;
+    display: flex;
+}
+
+.week {
+    flex: 2;
+    display: flex;
+}
+
+.days {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 25px;
+}
+.dates, .days{
+    
+}
+
+.bubble {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    border-radius: 14.7592px;
+}
+
+.strategy {
+    height: 75px;
+    width: 450px;
+    background-color: #F1F6FF;
+}
+
+.st-img img {
+    width: 20px;
+}
+
+.roadmap {
+    height: 75px;
+    width: 350px;
+    background-color: #FF5D6D;
+    color: #FFF;
+    margin: auto 0;
+}
+
+.test {
+    flex-direction: column;
+    width: 130px;
+    height: 75px;
+    background-color: #F1F6FF;
+    justify-content: space-evenly;
+    align-items: unset;
+    padding: 0 15px;
+    margin: auto 0px;
+}
+
+.done-details {
+    margin: 0 10px;
+    background: #F1F6FF;
+    width: 400.8px;
+    height: 75px;
+}
+
+
+.done-details :first-child {
+    text-decoration: line-through;
+}
+
+/* .calender div:nth-child(odd):not(:last-child){
+    border-bottom: 1px solid #F1F1F1;
+    border-right: 1px solid #F1F1F1;
+
+}
+.calender div:nth-child(even):not(:last-child){
+    border-bottom: 1px solid #F1F1F1;
+} */

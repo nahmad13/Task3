@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <aside class="sidenav">
+        <ul>
+            <li> <a href="#">
+                    <ion-icon name="reorder-two-outline"></ion-icon>
+                </a></li>
+            <li> <a href="#">
+                    <ion-icon name="aperture-outline"></ion-icon>
+                </a></li>
+            <li> <a href="#">
+                    <ion-icon name="grid-outline"></ion-icon>
+                </a></li>
+            <li> <a href="#">
+                    <ion-icon name="mail-outline"></ion-icon>
+                </a></li>
+            <li> <a href="#">
+                    <ion-icon name="person-outline"></ion-icon>
+                </a></li>
+            <li> <a href="#">
+                    <ion-icon name="settings-outline"></ion-icon>
+                </a></li>
+            <li><a href="#" class="logout">
+                    <ion-icon name="log-out-outline"></ion-icon>
+                </a></li>
+        </ul>
+    </aside>
+    <main class="main">
+        <section class="left">
+            <div class="details-header">
+                <h1>Overview</h1>
+                <a href="#">All Teams<ion-icon name="caret-down-outline"></ion-icon></a>
+            </div>
+            <div class="details">
+                <div class="emp-details">
+                    <div>
+                        <h2>Jonny Sins</h2>
+                        <a>jonnysins@dev.com</a>
+                    </div>
+                    <img src="assets/Avatar.png" alt="">
+                </div>
+                <p>Sallary: 12,000$ &nbsp; Exp: 5 Years</p>
+                <div class="line-graph">
+                    <div class="lg-header">
+                        <h5>Growth Analyst</h5> 
+                        <ion-icon name="options-outline"></ion-icon>
+                    </div>
+                    <canvas id="myChart" style="width:100%;max-width:600px;height: 100%;max-height: 130px;"></canvas>
+                </div>
+                <div>
+                    <canvas id="rdchart" style="width:100%;max-width:600px;height: 200px;max-height: 250px;"></canvas>
+                </div>
+            </div>
+        </section>
+        <section class="right">
+            <div class="grid-header">
+                <input class="nosubmit" type="search" placeholder="Search...">
+                <ion-icon name="chatbubble-outline"></ion-icon>
+                <ion-icon name="notifications-outline"></ion-icon>
+            </div>
+            <div class="boxes">
+                <div class="card project-progress">
+                    <div class="progress-header">
+                        <img src="assets/ic-progress.svg" alt="">
+                        <p>Projects in progress</p>
+                    </div>
+                    <div class="progress-details">
+                        <h2>34</h2>
+                        <progress max="100" value="34"></progress>
+                    </div>
+
+                </div>
+                <div class="card completion">
+                    <div class="progress-header">
+                        <img src="assets/ic-completion.svg" alt="">
+                        <p>Completion Rate</p>
+                    </div>
+                    <div class="progress-details">
+                        <h2>%92</h2>
+                        <progress id="file" max="100" value="92"></progress>
+                    </div>
+                </div>
+                <div class="card bundle">
+                    <div class="bundle-header">
+                        <img src="assets/ic-bundle.svg" alt="" style="width: 36px;">
+                        <div style="flex: 2;">
+
+                            <h4>Bundle Studio</h4>
+                            <p>6 members</menu>
+                            </p>
+                        </div>
+                        <ion-icon name="ellipsis-horizontal"></ion-icon>
+                    </div>
+                    <div class="bundle-details">
+                        <div>
+                            <img src="assets/Avatar.png" alt="">
+                            <img src="assets/Avatar.png" alt="">
+                            <img src="assets/Avatar.png" alt="">
+                            <img src="assets/Avatar.png" alt="">
+                            <img src="assets/Avatar.png" alt="">
+                            <img src="assets/Avatar.png" alt="">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card calender">
+                    <div class=" cal pending">Pending</div>
+                    <div class="cal">
+                        <div class="dates">
+                            <div class="ym">
+                                <h4>Nov</h4>
+                                <p>&nbsp; 2022
+                                <p>
+                            </div>
+                            <div class="week">
+                                <p>Show:</p>
+                                <a href="#"><h4>1 Week</h4><ion-icon name="caret-down-outline"></ion-icon></a>
+                            </div>
+                            <div>
+                                <ion-icon name="chevron-back-outline"></ion-icon>
+                                <ion-icon name="chevron-forward-outline"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="days">
+                            <div>
+                                <h4>7</h4>
+                                <p>Tue</p>
+                            </div>
+                            <div>
+                                <h4>8</h4>
+                                <p>Wed</p>
+                            </div>
+                            <div>
+                                <h4>9</h4>
+                                <p>Thu</p>
+                            </div>
+                            <div>
+                                <h4>10</h4>
+                                <p>Fri</p>
+                            </div>
+                            <div>
+                                <h4>11</h4>
+                                <p>Sat</p>
+                            </div>
+                            <div>
+                                <h4>12</h4>
+                                <p>Sun</p>
+                            </div>
+                            <div>
+                                <h4>13</h4>
+                                <p>Mon</p>
+                            </div>
+                        </div>
+                        <div class="bubble strategy">
+                            <div class="st-details">
+                                <h4>2021 Strategy for Bundle</h4>
+                                <p>Business Team</p>
+                            </div>
+                            <div class="st-img">
+                                <img src="assets/Avatar.png" alt="">
+                                <img src="assets/Avatar.png" alt="">
+                                <img src="assets/Avatar.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cal inp">In Process</div>
+                    <div class="cal inp-details">
+                        <div class="bubble roadmap">
+                            <div class="rm-details">
+                                <h4>Product roadmap considertaion</h4>
+                                <p>Product Team</p>
+                            </div>
+                            <div class="st-img">
+                                <img src="assets/Avatar.png" alt="">
+                            </div>
+                        </div>
+                        <div class="bubble test">
+                            <h4>Test for 2.3.1</h4>
+                            <p>Product</p>
+                        </div>
+                    </div>
+                    <div class="cal done">Done</div>
+                    <div class="cal ">
+                        <div class=" bubble done-details">
+                            <div>
+                                <h4>Product Review for Bundle</h4>
+                                <p>Business Team</p>
+                            </div>
+                            <div class="st-img">
+                                <img src="assets/Avatar.png" alt="">
+                                <img src="assets/Avatar.png" alt="">
+
+                            </div>
+                        </div>
+
+                    </div>  
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <script>
+        var xValues = ['0', 'Oct', 'Nov', 'Dec', 'Jan'];
+
+        new Chart("myChart", {
+            type: "line",
+            data: {
+                labels: xValues,
+                datasets: [{
+                    data: [0, 50, 17, 29, 58],
+                    borderColor: "#E087EE",
+                    pointRadius: 0,
+                    tension: 0.5,
+                    fill: false
+                }, {
+                    data: [0, 40, 20, 10, 60],
+                    borderColor: "#1780FF",
+                    pointRadius: 0,
+                    tension: 0.5,
+                    fill: false
+                }]
+            },
+            options: {
+                plugins: { legend: { display: false } },
+                scales: {
+                    y: {
+                        grid: {
+                            display: false,
+                            drawBorder: false,
+                        },
+                        min: 0,
+                        max: 60,
+                        ticks: {
+                            stepSize: 20,
+
+                        }
+                    },
+                    x: {
+                        grid: {
+                            display: false,
+                            drawBorder: false,
+                        },
+                    }
+                }
+            }
+        });
+        var xValues = ["Resourcefulness", "Perseverance", "Curiosity", "Creativity", "Eye for Detail", "Patience", "Enthusiasm"];
+        var yValues = [40, 35, 44, 32, 27, 30, 32];
+
+        new Chart("rdchart", {
+            type: "radar",
+            data: {
+                labels: xValues,
+                datasets: [{
+                    fill: false,
+                    pointRadius: 4,
+                    pointBackgroundColor: '#0272FA',
+                    borderColor: '#0272FA',
+                    data: yValues
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: { legend: { display: false } },
+                scales: {
+                    r: {
+                        pointLabels: {
+                            color: 'black',
+                            font: {
+                                size: 12,
+                                style: 'normal',
+                                family: 'Poppins',
+                            }
+                        },
+                        ticks: {
+                            display: false // Hides the labels in the middel (numbers)
+                        },
+                        grid: {
+                            display: false,
+                        },
+                        angleLines: {
+                            display: false
+                        },
+                        backgroundColor: '#F0F3FF'
+                    }
+                }
+            },
+
+        });
+    </script>
+</body>
+
+</html>
